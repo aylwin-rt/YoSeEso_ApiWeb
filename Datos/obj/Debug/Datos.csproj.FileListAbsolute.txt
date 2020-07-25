@@ -1,0 +1,17 @@
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\bin\Debug\Datos.dll
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\bin\Debug\Datos.pdb
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\bin\Debug\Modelo.dll
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\bin\Debug\Modelo.pdb
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\obj\Debug\Datos.dll
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\obj\Debug\Datos.pdb
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Aylwin\Documents\GitHub\YoSeEso_ApiWeb\Datos\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
