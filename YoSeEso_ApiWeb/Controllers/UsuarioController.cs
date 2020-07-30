@@ -13,9 +13,9 @@ namespace YoSeEso_ApiWeb.Controllers
     {
         BLUsuario capaNegocioUsuario = new BLUsuario();
 
-        public Respuesta Post([FromBody]Usuario usuario)
+        public Response Post([FromBody]Usuario usuario)
         {
-            Respuesta respuesta;
+            Response respuesta;
 
             try
             {
@@ -27,13 +27,13 @@ namespace YoSeEso_ApiWeb.Controllers
                 {
 
                     //Grabo el Libro
-                    respuesta = new Respuesta();
+                    respuesta = new Response();
                     respuesta.mensajeCodigo = 200; //SUCCESS
                     respuesta.mensajeResultado = "Usuario grabado correctamente";
                 }
                 else
                 {
-                    respuesta = new Respuesta();
+                    respuesta = new Response();
                     respuesta.mensajeCodigo = 400;
                     respuesta.mensajeResultado = "No se pudo grabar el usuario";
                 }
@@ -41,7 +41,7 @@ namespace YoSeEso_ApiWeb.Controllers
             catch (Exception ex)
             {
 
-                respuesta = new Respuesta();
+                respuesta = new Response();
                 respuesta.mensajeCodigo = 500;
                 respuesta.mensajeResultado = ex.Message.ToString();
             }

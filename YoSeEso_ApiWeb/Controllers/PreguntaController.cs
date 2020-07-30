@@ -36,15 +36,15 @@ namespace YoSeEso_ApiWeb.Controllers
             return preguntas;
         }
 
-        public Respuesta Post([FromBody]Pregunta pregunta)
+        public Response Post([FromBody]Pregunta pregunta)
         {
-            Respuesta respuesta;
+            Response respuesta;
 
-            string titulo = pregunta.nombre;
-            string autor = pregunta.fecha;
-            string editorial = pregunta.tema;
-            string idioma = pregunta.idUsuario;
-            string genero = pregunta.rutaImagen;
+            //string titulo = pregunta.nombre;
+            //string autor = pregunta.fecha;
+            //string editorial = pregunta.tema;
+            //string idioma = pregunta.idUsuario;
+            //string genero = pregunta.rutaImagen;
 
             try
             {
@@ -56,13 +56,13 @@ namespace YoSeEso_ApiWeb.Controllers
                 {
 
                     //Grabo el Libro
-                    respuesta = new Respuesta();
+                    respuesta = new Response();
                     respuesta.mensajeCodigo = 200; //SUCCESS
                     respuesta.mensajeResultado = "Pregunta grabada correctamente";
                 }
                 else
                 {
-                    respuesta = new Respuesta();
+                    respuesta = new Response();
                     respuesta.mensajeCodigo = 400;
                     respuesta.mensajeResultado = "No se pudo grabar la pregunta";
                 }
@@ -70,7 +70,7 @@ namespace YoSeEso_ApiWeb.Controllers
             catch (Exception ex)
             {
 
-                respuesta = new Respuesta();
+                respuesta = new Response();
                 respuesta.mensajeCodigo = 500;
                 respuesta.mensajeResultado = ex.Message.ToString();
             }
@@ -80,9 +80,9 @@ namespace YoSeEso_ApiWeb.Controllers
 
         }
 
-        public Respuesta Put([FromBody]Pregunta pregunta)
+        public Response Put([FromBody]Pregunta pregunta)
         {
-            Respuesta respuesta;
+            Response respuesta;
 
             try
             {
@@ -94,13 +94,13 @@ namespace YoSeEso_ApiWeb.Controllers
                 {
 
                     //Grabo el Libro
-                    respuesta = new Respuesta();
+                    respuesta = new Response();
                     respuesta.mensajeCodigo = 200; //SUCCESS
                     respuesta.mensajeResultado = "Pregunta actualizado correctamente";
                 }
                 else
                 {
-                    respuesta = new Respuesta();
+                    respuesta = new Response();
                     respuesta.mensajeCodigo = 400;
                     respuesta.mensajeResultado = "No se pudo actualizar la pregunta";
                 }
@@ -108,7 +108,7 @@ namespace YoSeEso_ApiWeb.Controllers
             catch (Exception ex)
             {
 
-                respuesta = new Respuesta();
+                respuesta = new Response();
                 respuesta.mensajeCodigo = 500;
                 respuesta.mensajeResultado = ex.Message.ToString();
             }
@@ -119,10 +119,10 @@ namespace YoSeEso_ApiWeb.Controllers
 
 
         [Route("api/Pregunta/{idPregunta:int}")]
-        public Respuesta Delete(int idPregunta)
+        public Response Delete(int idPregunta)
         {
 
-            Respuesta respuesta;
+            Response respuesta;
 
             try
             {
@@ -131,14 +131,14 @@ namespace YoSeEso_ApiWeb.Controllers
                 if (resultado > 0)
                 {
                     //Grabo el Libro
-                    respuesta = new Respuesta();
+                    respuesta = new Response();
                     respuesta.mensajeCodigo = 200; //SUCCESS
                     respuesta.mensajeResultado = "Pregunta eliminada correctamente";
                 }
                 else
                 {
 
-                    respuesta = new Respuesta();
+                    respuesta = new Response();
                     respuesta.mensajeCodigo = 400;
                     respuesta.mensajeResultado = "No se pudo eliminar la pregunta";
                 }
@@ -146,7 +146,7 @@ namespace YoSeEso_ApiWeb.Controllers
             catch (Exception ex)
             {
 
-                respuesta = new Respuesta();
+                respuesta = new Response();
                 respuesta.mensajeCodigo = 500;
                 respuesta.mensajeResultado = ex.Message.ToString();
             }

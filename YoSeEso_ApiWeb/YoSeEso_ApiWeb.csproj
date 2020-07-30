@@ -170,6 +170,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoguinController.cs" />
     <Compile Include="Controllers\PreguntaController.cs" />
+    <Compile Include="Controllers\RespuestaController.cs" />
     <Compile Include="Controllers\security\TokenGenerator.cs" />
     <Compile Include="Controllers\security\TokenValidationHandler.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
