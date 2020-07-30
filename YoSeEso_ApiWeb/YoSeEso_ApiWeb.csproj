@@ -174,7 +174,6 @@
     <Compile Include="Controllers\security\TokenGenerator.cs" />
     <Compile Include="Controllers\security\TokenValidationHandler.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
