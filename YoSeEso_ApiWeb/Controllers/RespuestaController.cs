@@ -11,30 +11,7 @@ namespace YoSeEso_ApiWeb.Controllers
 {
     public class RespuestaController : ApiController
     {
-        BLRespuesta capaNegocioRespuesta = new BLRespuesta();
-
-
-        [Authorize]
-        public List<Respuesta> Get()
-        {
-            List<Respuesta> respuestas = new List<Respuesta>();
-
-            respuestas = capaNegocioRespuesta.listarRespuestas();
-
-            return respuestas;
-        }
-
-
-        [Authorize]
-        [Route("api/Respuesta/{idPregunta:int}")]
-        public List<Respuesta> Get(int idPregunta)
-        {
-            List<Respuesta> respuestas = new List<Respuesta>();
-
-            respuestas = capaNegocioRespuesta.listarRespuestasPorPregunta(idPregunta);
-
-            return respuestas;
-        }
+        BLRespuesta capaNegocioRespuesta = new BLRespuesta();                     
 
         public Response Post([FromBody]Respuesta respuesta)
         {

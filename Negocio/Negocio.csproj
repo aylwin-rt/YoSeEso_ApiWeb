@@ -55,6 +55,8 @@
   <ItemGroup>
     <Compile Include="BLPregunta.cs" />
     <Compile Include="BLRespuesta.cs" />
+    <Compile Include="BLRespuestaPorPregunta.cs" />
+    <Compile Include="BLRespuestaPorUsuario.cs" />
     <Compile Include="BLUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
